@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+}
+.nav{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 30px;
+    top: 0;
+    z-index: 10;
+    
+}
+
+.nav h1{
+    color: white;
+    font-size: 40px;
+}
+
+.links a{
+    padding-right: 60px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.first{
+    position: relative;
+    text-align: center;
+    background-image: url(luca-bravo-O453M2Liufs-unsplash.jpg);
+    height: 200px;
+    background-size: cover;
+    padding: 200px;
+}
+
+
+
+.first h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.first p{
+    color: black;
+}
+
+.first button{
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.first button:hover{
+    background-color: orange;
+
+}
+
+.first p{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.discount{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.dst-head{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:3px;
+    font-size: 15px;
+}
+
+.places{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.places h2{
+    position: absolute;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-top: 7px;
+
+}
+
+.places img{
+    width: 300px;
+    height: 200px;
+    border-radius: 2%;
+}
+
+.places div{
+    margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.395);
+    width: 300px;
+    border-radius: 10px;
+}
+
+.places h1,p{
+    padding-left: 10px;
+}
+
+
+.whatsapp{
+    position: fixed;
+    top: 85%;   
+    width: 50px;
+    height: 50px;
+    left: 95%;
+    border-radius: 100%;
+    
+}
+
+.call{
+    position: fixed;
+    top: 75%;   
+    width: 50px;
+    height: 50px;
+    left: 95%;
+    
+}
+
+.end{
+    background-color: black;
+    padding: 50px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.last h1,p,h3{
+    color: white;
+}
+
+.last h1{
+    margin-bottom: 0;
+}
+
+.last p{
+    margin-top: 0;
+}
