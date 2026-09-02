@@ -158,3 +158,96 @@ body{
 .last p{
     margin-top: 0;
 }
+
+
+.pkg-first{
+    background-image: url(1431622.jpg);
+    background-size: cover;
+    padding: 80px;
+    text-align: center;
+}
+
+.pkg-first h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.pkg-first p{
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+}
+
+
+.pgk-scnd-places img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+
+}
+
+.pkg-scnd-head h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pkg-scnd-head h4{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    color: rgb(255, 0, 0);
+}
+
+.pkg-scnd-head p{
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    width: 900px;
+    color: rgba(0, 0, 0, 0.587);
+    margin-top:15px;
+    margin-bottom: 100px;
+}
+
+
+.pgk-scnd-places{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+
+.place-card{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    gap: 20px;
+}
+
+.place-card div{
+    padding-left: 30px;
+}
+
+.off{
+    position: absolute;
+    color: white;
+    background-color: red;
+    top:0px;
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 100px;
+    margin-left: 10px;
+}
+
+
+div i{
+    color: blue;
+}
