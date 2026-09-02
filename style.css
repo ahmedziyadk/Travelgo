@@ -35,16 +35,30 @@ body{
     padding: 200px;
 }
 
-
+.content h2{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.299);
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+    font-size: 18px;
+    padding:5px 0px;
+    margin-bottom:0;
+}
 
 .first h1{
+    margin-top: 0;
     font-size: 50px;
-    color: black;
+    color: white;
     margin-bottom: 0;
 }
 
 .first p{
-    color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 700px;
+    margin: auto;
+    text-align: center;
 }
 
 .first button{
@@ -53,6 +67,7 @@ body{
     border-radius: 10px;
     font-size: 15px;
     padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .first button:hover{
@@ -183,7 +198,7 @@ body{
 .pgk-scnd-places img{
     width: 400px;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 
 }
 
@@ -226,10 +241,11 @@ body{
 
 .place-card{
     position: relative;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
     width: 400px;
     gap: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
 }
 
 .place-card div{
@@ -245,9 +261,133 @@ body{
     padding: 5px;
     margin-right: 100px;
     margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
-div i{
+.fa-solid fa-location-dot{
     color: blue;
+    background-color: blue;
+}
+
+
+.per-person{
+    color: black;
+    display: inline;
+}
+
+.price{
+    display: inline;
+    font-size: 40px;
+    color:rgb(0, 96, 169) ;
+}
+
+.features{
+    color:black;
+    font-size: 20px;
+}
+
+.place-card button{
+    width:350px;
+    margin-left:23px;
+    padding:15px 80px;
+    font-size: 16px;
+    margin-bottom:30px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(0, 96, 169);
+    color:white;
+}
+
+.place-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.place-card button:hover{
+    background-color: rgb(0, 63, 114);
+}
+
+.pkg-third{
+    text-align: center;
+    padding-bottom:45px;
+    padding-top: 20px;
+    background-color: rgb(244, 244, 244);
+}
+.why-choose{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: space-between;
+
+}
+
+.fa-star,.fa-headset,.fa-wallet,.fa-shield-heart{
+    font-size: 60px;
+}
+
+.pkg-third h1{
+    font-size: 50px;
+}
+
+.why-choose p{
+    color:rgba(0, 0, 0, 0.703);
+}
+
+.choose-points{
+    width:200px;
+}
+
+.choose-points h2{
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+}
+
+.choose-points p{
+    margin-top: 5px;
+}
+
+.cant-decide{
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(0, 63, 114);
+    padding:90px 80px;
+    border-radius: 20px;
+}
+
+
+.pkg-4th{
+    margin:100px
+}
+
+
+.cant-decide h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom:0;
+    margin-top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cant-decide p{
+    margin-top:15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cant-decide button{
+    background-color: rgb(246, 250, 3);
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.cant-decide button:hover{
+    background-color: rgb(197, 200, 0);
 }
