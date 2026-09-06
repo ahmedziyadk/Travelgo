@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     margin: 0;
 }
@@ -20,10 +25,17 @@ body{
 }
 
 .links a{
-    padding-right: 60px;
+    padding: 10px 15px;
     text-decoration: none;
     color: white;
     font-size: 20px;
+    
+}
+
+.links a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
 }
 
 .first{
@@ -35,22 +47,16 @@ body{
     padding: 200px;
 }
 
-.content h2{
-    color: white;
-    background-color: rgba(255, 255, 255, 0.299);
-    border-radius: 20px;
-    width: 300px;
-    margin: auto;
-    font-size: 18px;
-    padding:5px 0px;
-    margin-bottom:0;
-}
+
+
+
 
 .first h1{
     margin-top: 0;
-    font-size: 50px;
+    font-size: 90px;
     color: white;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .first p{
@@ -59,20 +65,46 @@ body{
     width: 700px;
     margin: auto;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.first button{
-    background-color: yellow;
+.home-desti{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(215, 218, 0);
     border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 7px 10px;
+    /* margin-top: 60px; */
+    /* margin-right: 300px; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.first button:hover{
-    background-color: orange;
+.home-cntct{
+    text-decoration: none;
+    background-color: rgba(214, 218, 0, 0);
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 7px 20px;
+    /* margin-top: 30px; */
+    /* margin-right: 350px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+#popular-destinations {
+    scroll-margin-top: 90px;
+}
+
+.home-desti:hover{
+    background-color: rgb(251, 255, 6);
+}
+
+.home-cntct:hover{
+    background-color: rgb(248, 248, 248);
+    color: black;
 }
 
 .first p{
@@ -85,8 +117,8 @@ body{
     top: 25px;
     right: 30px;
     background-color: red;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 20px;
     color: white;
 }
 
@@ -112,6 +144,8 @@ body{
     border-radius: 5px;
     margin-left: 7px;
     margin-top: 7px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -126,6 +160,13 @@ body{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.395);
     width: 300px;
     border-radius: 10px;
+    height: 380px;
+}
+
+.place1 a{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 1px;
 }
 
 .places h1,p{
@@ -390,4 +431,371 @@ body{
 
 .cant-decide button:hover{
     background-color: rgb(197, 200, 0);
+}
+
+
+.first-gallery{
+    background-image: url(gallery.jpg);
+    background-size: cover;
+    padding: 130px;
+    text-align: center;
+}
+
+.first-gallery h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.first-gallery p{
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+}
+
+.moments-head{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.moments-head h1{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.moments-head p{
+    color: rgba(0, 0, 0, 0.463);
+    font-size: 20px;
+    width: 800px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.gallery-tabs{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+
+.gallery-tabs div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 63, 114);
+    border: 3px solid rgb(0, 63, 114);
+    padding: 6px 20px;
+    border-radius: 50px;
+}
+
+.gallery-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-left:10px;
+    margin-right: 10px;
+
+
+}
+
+.gallery-images img{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.gallery-images div{
+    width: 350px;
+    height: 250px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom:40px ;
+}
+
+.gallery-images h1{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    left: 10px;
+    top: 200px;
+
+}
+
+.gallery-images p{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 97%;
+}
+
+
+.gallery-end{
+    margin-top: 200px;
+    background-color: black;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    padding-right:170px;
+}
+
+.gallery-end-name{
+    display: block;
+}
+
+.gallery-end-name h1{
+    color: white;
+    margin-bottom: 0;
+}
+
+.gallery-end-name p{
+    width: 500px;
+}
+
+.quick-links a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-left:20px ;
+    margin-bottom: 10px;
+}
+
+.quick-links a:hover{
+    color: yellow;
+}
+
+.quick-links h1{
+    color: yellow;
+}
+
+
+.gallery-end-destination a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-left:20px ;
+    margin-bottom: 10px;
+}
+
+.gallery-end-destination a:hover{
+    color: yellow;
+}
+
+.gallery-end-destination h1{
+    color: yellow;
+}
+
+.awaits{
+    margin-top: 80px;
+    text-align: center;
+    background-image: url(awaits.jpg);
+    padding:90px 80px;
+    border-radius: 20px;
+}
+
+
+.gallery-awaits{
+    margin:100px
+}
+
+
+.awaits h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom:0;
+    margin-top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.awaits p{
+    margin-top:15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.awaits a{
+    background-color: rgb(246, 250, 3);
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.cant-decide button:hover{
+    background-color: rgb(197, 200, 0);
+}
+
+.fa-facebook:hover{
+   color: rgb(255, 255, 255);
+}
+
+
+
+.first-contact{
+    background-image: url(contact.jpg);
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+
+.first-contact h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.first-contact p{
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+}
+
+.second-contact{
+    display: flex;
+    margin: 50px 150px 5px 150px;
+}
+
+.get-in-touch h1{
+    font-size: 50px;
+    color: rgb(0, 63, 114);
+    margin-bottom: 0;
+}
+
+.get-in-touch p{
+    color: rgba(0, 0, 0, 0.493);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+    font-size: 18px;
+    position: relative;
+}
+
+.get-in-touch h2{
+    font-size: 20px;
+    position:absolute;
+    margin-top: -35px;
+    left: 205px;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.get-in-touch h5{
+    margin-top: 0;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.735);
+    margin-left: 55px;
+}
+
+.fa-location-dot,.fa-phone,.fa-envelope,.fa-clock{
+    font-size: 25px;
+    background-color: rgba(0, 255, 255, 0.242);
+    border-radius: 100%;
+    padding: 8px 6px 8px 6px;
+    margin-top: 10px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 22px;
+}
+
+.contact-form{
+    width:80%;
+    padding: 10px 50px 10px 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.237);
+    margin-left: 10px;
+    
+    
+}
+
+.form input,select{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.contact-form h1{
+    color: rgb(0, 63, 114);
+}
+
+.form textarea{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form button{
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 50px;
+    padding: 15px 0px 15px 0px;
+    background-color: rgb(0, 63, 114);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.full-width{
+    grid-column: 1/-1;
+}
+
+.form label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.help{
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(0, 63, 114);
+    padding:90px 80px;
+    border-radius: 20px;
+}
+
+
+.contact-help{
+    margin:100px
+}
+
+
+.help h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom:0;
+    margin-top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.help p{
+    margin-top:15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.help a{
+    background-color: rgb(246, 250, 3);
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
