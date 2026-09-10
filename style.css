@@ -16,6 +16,7 @@ body{
     padding-right: 30px;
     top: 0;
     z-index: 10;
+    height: 90px;
     
 }
 
@@ -24,11 +25,19 @@ body{
     font-size: 40px;
 }
 
-.links a{
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.links a,button{
     padding: 10px 15px;
     text-decoration: none;
     color: white;
     font-size: 20px;
+    background: none;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
@@ -328,16 +337,21 @@ body{
     font-size: 20px;
 }
 
-.place-card button{
-    width:350px;
-    margin-left:23px;
-    padding:15px 80px;
-    font-size: 16px;
-    margin-bottom:30px;
+.place-card a {
+    width: 350px;
+    margin-left: 23px;
+    padding: 15px 80px;
+    font-size: 20px;
+    padding-left: 125px;
+    margin-bottom: 30px;
     border-radius: 5px;
     border: none;
-    background-color:rgb(0, 96, 169);
-    color:white;
+    background-color: rgb(0, 96, 169);
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .place-name{
@@ -418,12 +432,13 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.cant-decide button{
+.cant-decide a{
     background-color: rgb(246, 250, 3);
     color:rgb(0, 0, 0);
     padding:10px 20px;
-    border:none;
+    /* border:none; */
     border-radius: 10px;
+    text-decoration: none;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -695,7 +710,7 @@ body{
     margin-left: 55px;
 }
 
-.fa-location-dot,.fa-phone,.fa-envelope,.fa-clock{
+.get-in-touch .fa-location-dot,.fa-phone,.fa-envelope,.fa-clock{
     font-size: 25px;
     background-color: rgba(0, 255, 255, 0.242);
     border-radius: 100%;
@@ -790,6 +805,639 @@ body{
 }
 
 .help a{
+    background-color: rgb(246, 250, 3);
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.destinations{
+    position: relative;
+}
+
+.drop{
+    position: absolute;
+    display: none;
+    top: 10%;
+    z-index: 1000;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.destinations:focus-within .drop{
+    display: block;
+    border-radius: 5px;
+    color: black;
+    
+}
+
+.drop a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.drop a{
+    display: block;
+    padding: 10px;
+    color: black;
+
+}
+
+.destinations button{
+    background-color: none;
+}
+
+.destinations button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+
+.first-maldives{
+    background-image: url(Makdives.jpg);
+    background-size: cover;
+    padding: 130px;
+    text-align: center;
+}
+
+.first-maldives h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    color: white;
+    margin-top: 0;
+}
+
+.first-maldives p{
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+}
+
+
+.first-maldives h3{
+    background-color: rgba(0, 0, 0, 0.297);
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    padding: 3px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.second-maldives h1{
+    color: rgb(0, 63, 114);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.second-maldives p{
+    color: rgba(0, 0, 0, 0.566);
+    width: 900px;
+    text-align: center;
+    margin: auto;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.maldives-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+    gap: 40px;
+}
+
+.maldives-cards div{
+    width: 300px;
+    padding: 40px 5px 10px 5px;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.283);
+    border-radius: 10px;
+}
+
+.maldives-cards .fa-hotel,.fa-person-walking,.fa-tree{
+    font-size: 40px;
+}
+
+.maldives-cards h2{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.maldives-cards h5{
+    font-size: 20px;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.689);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.third-maldives{
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.third-maldives h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.things-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.things-cards div{
+    width: 300px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.276);
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.things-cards .fa-heart,.fa-earth-oceania,.fa-person-swimming,.fa-mask-face{
+    font-size: 50px;
+}
+
+.things-cards h2{
+    margin-top:5px ;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.things-cards p{
+    color: rgba(0, 0, 0, 0.598);
+    margin-top: 0;
+    margin-left: -8px;
+}
+
+
+.ready{
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(0, 63, 114);
+    padding:90px 80px;
+    border-radius: 20px;
+}
+
+
+.maldives-ready{
+    margin:100px
+}
+
+
+.ready h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom:0;
+    margin-top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ready p{
+    margin-top:15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ready a{
+    background-color: rgb(246, 250, 3);
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.first-swiss{
+    background-image: url(swiss.jpg);
+    background-size: cover;
+    padding: 130px;
+    text-align: center;
+}
+
+.first-swiss h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    color: white;
+    margin-top: 0;
+}
+
+.first-swiss p{
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+}
+
+
+.first-swiss h3{
+    background-color: rgba(0, 0, 0, 0.297);
+    border-radius: 10px;
+    width: 200px;
+    color: white;
+    padding: 3px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+
+
+.second-swiss h1{
+    color: rgb(0, 63, 114);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.second-swiss p{
+    color: rgba(0, 0, 0, 0.566);
+    width: 900px;
+    text-align: center;
+    margin: auto;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.swiss-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+    gap: 40px;
+}
+
+.swiss-cards div{
+    width: 300px;
+    padding: 40px 5px 10px 5px;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.283);
+    border-radius: 10px;
+}
+
+.swiss-cards .fa-mountain,.fa-train-subway,.fa-person-hiking{
+    font-size: 40px;
+}
+
+.swiss-cards h2{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.swiss-cards h5{
+    font-size: 18px;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.689);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-swiss{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 51, 7);
+    padding-left: 20px;
+    padding-right: 30px;
+    top: 0;
+    z-index: 10;
+    
+}
+
+.nav-swiss h1{
+    color: white;
+    font-size: 40px;
+}
+
+.links-swiss{
+    display: flex;
+    align-items: center;
+}
+
+.links-swiss a,button{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background: none;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.links-swiss a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.swiss-places-sction{
+    padding-top: 100px;
+}
+
+
+.places-swiss{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.places-swiss img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.places-swiss div{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.279);
+    width: 300px;
+    border-radius: 10px;
+}
+
+.places-swiss h2{
+    font-size: 20pxpx;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.places-swiss p{
+    color:rgba(0, 0, 0, 0.521);
+    margin-top: 0;
+}
+
+.swiss-places-sction h1{
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.s-ready{
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(0, 51, 7);
+    padding:90px 80px;
+    border-radius: 20px;
+}
+
+
+.swiss-ready{
+    margin:100px
+}
+
+
+.s-ready h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom:0;
+    margin-top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.s-ready p{
+    margin-top:15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.s-ready a{
+    background-color: rgb(246, 250, 3);
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+/* Dubai */
+
+.first-dubai{
+    background-image: url(dubai.jpg);
+    background-size: cover;
+    padding: 130px;
+    text-align: center;
+}
+
+
+.first-dubai h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    color: white;
+    margin-top: 0;
+}
+
+.first-dubai p{
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+}
+
+
+.first-dubai h3{
+    background-color: rgba(249, 245, 0, 0.922);
+    border-radius: 10px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    margin: auto;
+    margin-bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.second-dubai h1{
+    color: rgb(120, 100, 0);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.second-dubai p{
+    color: rgba(0, 0, 0, 0.566);
+    width: 900px;
+    text-align: center;
+    margin: auto;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.dubai-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+    gap: 40px;
+}
+
+.dubai-cards div{
+    width: 300px;
+    padding: 40px 5px 10px 5px;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.283);
+    border-radius: 10px;
+}
+
+.dubai-cards .fa-building,.fa-sun,.fa-car{
+    font-size: 40px;
+}
+
+.dubai-cards h2{
+    font-size:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.dubai-cards h5{
+    font-size: 17px;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.689);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-dubai{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 20, 51);
+    padding-left: 20px;
+    padding-right: 30px;
+    top: 0;
+    z-index: 10;
+    
+}
+
+.nav-dubai h1{
+    color: white;
+    font-size: 40px;
+}
+
+.links-dubai{
+    display: flex;
+    align-items: center;
+}
+
+.links-dubai a,button{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background: none;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.links-dubai a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.dubai-places-sction{
+    padding-top: 100px;
+}
+
+
+.places-dubai{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.places-dubai img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.places-dubai div{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.279);
+    width: 300px;
+    border-radius: 10px;
+}
+
+.places-dubai h2{
+    font-size: 20pxpx;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.places-dubai p{
+    color:rgba(0, 0, 0, 0.521);
+    margin-top: 0;
+}
+
+.dubai-places-sction h1{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.d-ready{
+    margin-top: 80px;
+    text-align: center;
+    background: linear-gradient(
+     rgb(120, 100, 0,0.6),
+     rgb(120, 100, 0,0.6)),
+    url(dubai-sheikh-zayed-3840x2160-21154.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:90px 80px;
+    border-radius: 20px;
+}
+
+
+.dubai-ready{
+    margin:100px
+}
+
+
+.d-ready h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom:0;
+    margin-top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.d-ready p{
+    margin-top:15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.d-ready a{
     background-color: rgb(246, 250, 3);
     color:rgb(0, 0, 0);
     padding:10px 20px;
